@@ -1,0 +1,74 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "margin-top": 8,
+    "margin-left": 15,
+    "margin-right": 15,
+    "spacing": 6,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["backlight", "pulseaudio", "network", "cpu", "memory", "temperature", "battery"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "󰲡", "2": "󰲣", "3": "󰲥",
+            "4": "󰲧", "5": "󰲩",
+            "active": "󰮯",
+            "default": "󰊠"
+        }
+    },
+    "clock": {
+        "format": "  {:%I:%M %p   %a %b %d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+        "format-charging": "󰂄 {capacity}%",
+        "format-full": "󰁹 Full",
+	"format-plugged": "󰂄 {capacity}%",
+	"states": {
+        "critical": 15
+    },
+    "interval": 30
+},
+    "network": {
+	"interface": "wlo1",	
+        "format-wifi": "󰤨 {essid}",
+        "format-disconnected": "󰤭 offline",
+        "tooltip-format": "{ipAddr}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 muted",
+        "format-icons": { "default": ["󰕿","󰖀","󰕾"] }
+    },
+    "cpu": {
+        "format": "󰘚 {usage}%",
+        "interval": 5
+    },
+    "memory": {
+        "format": "󰍛 {percentage}%",
+        "interval": 5
+    },
+     "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"]
+    },
+     "temperature": {
+        "format": "󰔏 {temperatureC}°C",
+        "critical-threshold": 80,
+        "format-critical": "󰔏 {temperatureC}°C"
+    },
+     "power-profiles-daemon": {
+        "format": "{icon}",
+        "format-icons": {
+            "power-saver": "󰌪",
+            "balanced": "󰛲",
+            "performance": "󰓅"
+        }
+    }
+}

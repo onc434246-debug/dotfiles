@@ -1,0 +1,10 @@
+[global]
+    follow = mouse
+    width = 300
+    height = 100
+    offset = 10x50
+    origin = top-right
+
+[battery]
+    appname = "battery"
+    skip_display = true
