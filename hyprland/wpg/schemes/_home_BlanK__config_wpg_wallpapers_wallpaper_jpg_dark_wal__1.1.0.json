@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/BlanK/.config/wpg/wallpapers/wallpaper.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#201a0c",
+        "foreground": "#d2d0c9",
+        "cursor": "#d2d0c9"
+    },
+    "colors": {
+        "color0": "#201a0c",
+        "color1": "#877B71",
+        "color2": "#97882F",
+        "color3": "#9D8958",
+        "color4": "#928478",
+        "color5": "#778380",
+        "color6": "#A69A91",
+        "color7": "#d2d0c9",
+        "color8": "#93918c",
+        "color9": "#877B71",
+        "color10": "#97882F",
+        "color11": "#9D8958",
+        "color12": "#928478",
+        "color13": "#778380",
+        "color14": "#A69A91",
+        "color15": "#d2d0c9"
+    }
+}

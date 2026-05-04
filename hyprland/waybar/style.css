@@ -1,3 +1,4 @@
+@import "/home/BlanK/.cache/wal/colors-waybar.css";
 * {
     font-family: "JetBrainsMono Nerd Font";
     font-size: 13px;
@@ -11,8 +12,8 @@ window#waybar {
 }
 
 .modules-left, .modules-center, .modules-right {
-    background: rgba(20, 0, 0, 0.5);
-    border-radius: 12px;
+    background: transparent;
+    border-radius: 0;
     padding: 4px 10px;
     margin: 4px 0;
 }
