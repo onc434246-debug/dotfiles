@@ -60,4 +60,51 @@ sudo systemctl enable tlp
 sudo systemctl enable thermald
 sudo systemctl enable earlyoom
 
+# Install Hyprland packages
+echo "Installing Hyprland packages..."
+sudo pacman -S --noconfirm \
+    hyprland \
+    hyprpaper \
+    waybar \
+    wofi \
+    kitty \
+    dunst \
+    pipewire \
+    pipewire-audio \
+    pipewire-pulse \
+    wireplumber \
+    polkit-gnome \
+    xdg-desktop-portal-hyprland \
+    wl-clipboard \
+    cliphist \
+    grim \
+    slurp \
+    swaybg \
+    brightnessctl \
+    playerctl \
+    ttf-jetbrains-mono-nerd \
+    gnome-themes-extra \
+    power-profiles-daemon \
+    hyprlock
+
+# Install Hyprland AUR packages
+echo "Installing Hyprland AUR packages..."
+paru -S --noconfirm wlogout
+
+# Copy Hyprland configs
+echo "Copying Hyprland config files..."
+mkdir -p ~/.config/hypr
+mkdir -p ~/.config/waybar
+mkdir -p ~/.config/kitty
+mkdir -p ~/.config/dunst
+cp -r ~/dotfiles/hyprland/hypr/* ~/.config/hypr/
+cp -r ~/dotfiles/hyprland/waybar/* ~/.config/waybar/
+cp -r ~/dotfiles/hyprland/kitty/* ~/.config/kitty/
+cp -r ~/dotfiles/hyprland/dunst/* ~/.config/dunst/
+
+# Enable Hyprland services
+echo "Enabling Hyprland services..."
+sudo systemctl enable power-profiles-daemon
+systemctl --user enable pipewire-pulse
+
 echo "Done! Please reboot your system."
