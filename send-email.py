@@ -6,8 +6,8 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 # Your Gmail settings
-SENDER = "aljoegabisondaligdig777@gmail.com"
-PASSWORD = "gakbtqawowongfuq"
+SENDER = ""
+PASSWORD = ""
 
 recipient = input("Send to: ")
 subject = input("Subject: ")

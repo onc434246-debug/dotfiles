@@ -3,8 +3,8 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = "8684127148:AAFC-9hnCtUKOxJws34k3WCZHVnoFRMJgAo"  # paste your token here
-ALLOWED_CHAT_ID = 8782127725
+TOKEN = ""  # paste your token here
+ALLOWED_CHAT_ID = []
 
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.chat_id != ALLOWED_CHAT_ID:
