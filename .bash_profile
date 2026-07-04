@@ -3,4 +3,6 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-export LIBVA_DRIVER_NAME=iHD
+if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+    exec uwsm start hyprland-uwsm.desktop
+fi
